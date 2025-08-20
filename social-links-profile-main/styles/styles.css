@@ -1,0 +1,28 @@
+:root {
+--green: hsl(75, 94%, 57%)
+
+--white: hsl(0, 0%, 100%)
+
+--grey 700: hsl(0, 0%, 20%)
+--grey 800: hsl(0, 0%, 12%)
+--grey 900: hsl(0, 0%, 8%)
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Using Inter font for better readability */
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
