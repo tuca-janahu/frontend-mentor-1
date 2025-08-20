@@ -1,28 +1,77 @@
 :root {
---green: hsl(75, 94%, 57%)
-
---white: hsl(0, 0%, 100%)
-
---grey 700: hsl(0, 0%, 20%)
---grey 800: hsl(0, 0%, 12%)
---grey 900: hsl(0, 0%, 8%)
+--green: hsl(75, 94%, 57%);
+--white: hsl(0, 0%, 100%);
+--grey700: hsl(0, 0%, 20%);
+--grey800: hsl(0, 0%, 12%);
+--grey900: hsl(0, 0%, 8%);
 }
 
 body {
     font-family: "Inter", sans-serif; /* Using Inter font for better readability */
     font-size: 14px;
-    background-color: #fff;
+    background-color: var(--grey900);
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: auto; /* Full viewport height */
+    width: 40%;
+    border-radius: 16px;
+    background-color: var(--grey800);
+    margin: 3rem auto;
+    padding:  5% 0;
+    color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--green);
+}
+
+.card  {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey700);
+    gap: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.05;
+    transition: 0.1s;
+    color: var(--green);
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--green);
 }
 
